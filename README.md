@@ -118,7 +118,7 @@ graph TD
 
 ## Smoke Tests
 
-Located in `test/smoke_test/` — executed automatically during `docker build --target test` — **23 tests** total.
+Located in `test/smoke/` — executed automatically during `docker build --target test` — **23 tests** total.
 
 <details>
 <summary>Click to expand test details</summary>
@@ -184,7 +184,7 @@ realsense_noetic/
 │   ├── build-worker.yaml        # Docker build + smoke test
 │   └── release-worker.yaml      # GitHub Release
 └── test/
-    └── smoke_test/              # Bats environment tests
+    └── smoke/              # Bats environment tests
         ├── ros_env.bats
         ├── script_help.bats
         └── test_helper.bash
