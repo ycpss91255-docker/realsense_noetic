@@ -118,45 +118,7 @@ graph TD
 
 ## Smoke Tests
 
-Located in `test/smoke/` — executed automatically during `docker build --target test` — **23 tests** total.
-
-<details>
-<summary>Click to expand test details</summary>
-
-#### ROS environment (7)
-
-| Test | Description |
-|------|-------------|
-| `ROS_DISTRO` | Is set |
-| `setup.bash` | File exists |
-| `setup.bash` | Can be sourced |
-| `realsense2_camera` | Package available via `rospack find` |
-| `realsense2_description` | Package available via `rospack find` |
-| `librealsense2` | Library installed |
-| udev rules | `/etc/udev/rules.d/99-realsense-libusb.rules` exists |
-
-#### Script help (16)
-
-| Test | Description |
-|------|-------------|
-| `build.sh -h` | Exits 0 |
-| `build.sh --help` | Exits 0 |
-| `build.sh -h` | Prints usage |
-| `run.sh -h` | Exits 0 |
-| `run.sh --help` | Exits 0 |
-| `run.sh -h` | Prints usage |
-| `exec.sh -h` | Exits 0 |
-| `exec.sh --help` | Exits 0 |
-| `exec.sh -h` | Prints usage |
-| `stop.sh -h` | Exits 0 |
-| `stop.sh --help` | Exits 0 |
-| `stop.sh -h` | Prints usage |
-| `build.sh -h` | Detects zh from `LANG=zh_TW.UTF-8` |
-| `build.sh -h` | Detects ja from `LANG=ja_JP.UTF-8` |
-| `build.sh -h` | Defaults to en for `LANG=en_US.UTF-8` |
-| `build.sh -h` | `SETUP_LANG` overrides `LANG` |
-
-</details>
+See [TEST.md](doc/test/TEST.md) for details.
 
 ## Directory Structure
 
